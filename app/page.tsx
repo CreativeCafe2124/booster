@@ -251,7 +251,7 @@ export default function HomePage() {
                 href="#"
                 onClick={(e) => e.preventDefault()}
               >
-                Powered by Firecrawl.
+                Powered by BubblebitX.
               </Link>
             </div>
           </div>

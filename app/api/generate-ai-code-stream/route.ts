@@ -756,11 +756,7 @@ CRITICAL STYLING RULES - MUST FOLLOW:
 - NEVER create App.css, Component.css, or any component-specific CSS files
 - NEVER import './App.css' or any CSS files except index.css
 - ALWAYS use Tailwind CSS classes for ALL styling
-- ONLY create src/index.css with the @tailwind directives
-- The ONLY CSS file should be src/index.css with:
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+- ALWAYS create src/index.css with Tailwind directives
 - Use Tailwind's full utility set: spacing, colors, typography, flexbox, grid, animations, etc.
 - ALWAYS add smooth transitions and animations where appropriate:
   - Use transition-all, transition-colors, transition-opacity for hover states
@@ -857,12 +853,6 @@ When generating code, FOLLOW THIS PROCESS:
 7. Do NOT stop until all imports are satisfied
 
 Use this XML format for React components only (DO NOT create tailwind.config.js - it already exists):
-
-<file path="src/index.css">
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-</file>
 
 <file path="src/App.jsx">
 // Main App component that imports and uses other components
