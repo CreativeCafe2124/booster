@@ -2,7 +2,8 @@
 
 AI-powered website builder and code generation platform. An innovative application for creating React apps instantly using artificial intelligence. Built on the foundation of modern web technologies with sandboxed development environments.
 
-<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExODAwZGJzcDVmZGYxc3MyNDUycTliYnAwem1qbzhtNHh0c2JrNDdmZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LMYzMkNmOecj3yFw81/giphy.gif" alt="Booster Demo" width="100%"/>
+<!-- Demo GIF temporarily disabled -->
+<!-- <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExODAwZGJzcDVmZGYxc3MyNDUycTliYnAwem1qbzhtNHh0c2JrNDdmZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LMYzMkNmOecj3yFw81/giphy.gif" alt="Booster Demo" width="100%"/> -->
 
 ## Features
 
