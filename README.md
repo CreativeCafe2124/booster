@@ -1,19 +1,30 @@
-# Open Lovable
+# Booster
 
-Chat with AI to build React apps instantly. An example app made by the [Firecrawl](https://firecrawl.dev/?ref=open-lovable-github) team. For a complete cloud solution, check out [Lovable.dev](https://lovable.dev/) ❤️.
+AI-powered website builder and code generation platform. An innovative application for creating React apps instantly using artificial intelligence. Built on the foundation of modern web technologies with sandboxed development environments.
 
-<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExODAwZGJzcDVmZGYxc3MyNDUycTliYnAwem1qbzhtNHh0c2JrNDdmZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LMYzMkNmOecj3yFw81/giphy.gif" alt="Open Lovable Demo" width="100%"/>
+<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExODAwZGJzcDVmZGYxc3MyNDUycTliYnAwem1qbzhtNHh0c2JrNDdmZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LMYzMkNmOecj3yFw81/giphy.gif" alt="Booster Demo" width="100%"/>
+
+## Features
+
+✨ **AI-Powered Code Generation** - Generate complete React applications using natural language
+🔍 **Web Scraping** - Extract and recreate existing websites with intelligent content analysis
+🎨 **Design Styles** - Multiple design aesthetics (Modern, Glassmorphism, Neumorphism, etc.)
+🏗️ **Sandboxed Development** - Safe, isolated environments for code execution
+⚡ **Real-time Preview** - Instant visual feedback during development
+🔧 **Interactive Editing** - AI-assisted code refinement and customization
 
 ## Setup
 
 1. **Clone & Install**
 ```bash
-git clone https://github.com/firecrawl/open-lovable.git
-cd open-lovable
-pnpm install  # or npm install / yarn install
+git clone https://github.com/CreativeCafe2124/Booster.git
+cd Booster
+npm install
 ```
 
-2. **Add `.env.local`**
+2. **Environment Configuration**
+
+Create a `.env` file with your API keys:
 
 ```env
 # =================================================================
@@ -22,7 +33,7 @@ pnpm install  # or npm install / yarn install
 FIRECRAWL_API_KEY=your_firecrawl_api_key    # https://firecrawl.dev
 
 # =================================================================
-# AI PROVIDER - Choose your LLM
+# AI PROVIDER - Choose your LLM (at least one required)
 # =================================================================
 ANTHROPIC_API_KEY=your_anthropic_api_key  # https://console.anthropic.com
 OPENAI_API_KEY=your_openai_api_key        # https://platform.openai.com
@@ -30,38 +41,75 @@ GEMINI_API_KEY=your_gemini_api_key        # https://aistudio.google.com/app/apik
 GROQ_API_KEY=your_groq_api_key            # https://console.groq.com
 
 # =================================================================
-# FAST APPLY (Optional - for faster edits)
+# SANDBOX PROVIDER - Choose ONE: Vercel or E2B (recommended)
 # =================================================================
-MORPH_API_KEY=your_morphllm_api_key    # https://morphllm.com/dashboard
+SANDBOX_PROVIDER=e2b  # or 'vercel'
 
-# =================================================================
-# SANDBOX PROVIDER - Choose ONE: Vercel (default) or E2B
-# =================================================================
-SANDBOX_PROVIDER=vercel  # or 'e2b'
+# For E2B Sandbox (recommended)
+E2B_API_KEY=your_e2b_api_key      # https://e2b.dev
 
-# Option 1: Vercel Sandbox (default)
-# Choose one authentication method:
-
-# Method A: OIDC Token (recommended for development)
-# Run `vercel link` then `vercel env pull` to get VERCEL_OIDC_TOKEN automatically
-VERCEL_OIDC_TOKEN=auto_generated_by_vercel_env_pull
-
-# Method B: Personal Access Token (for production or when OIDC unavailable)
-# VERCEL_TEAM_ID=team_xxxxxxxxx      # Your Vercel team ID 
-# VERCEL_PROJECT_ID=prj_xxxxxxxxx    # Your Vercel project ID
-# VERCEL_TOKEN=vercel_xxxxxxxxxxxx   # Personal access token from Vercel dashboard
-
-# Option 2: E2B Sandbox
-# E2B_API_KEY=your_e2b_api_key      # https://e2b.dev
+# For Vercel Sandbox (alternative)
+# VERCEL_TOKEN=your_vercel_token
+# VERCEL_TEAM_ID=your_team_id
+# VERCEL_PROJECT_ID=your_project_id
 ```
 
-3. **Run**
+3. **Run Development Server**
 ```bash
-pnpm dev  # or npm run dev / yarn dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000)
 
+## Tech Stack
+
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Styling**: Tailwind CSS, Radix UI, Framer Motion
+- **AI Integration**: Vercel AI SDK, Multiple AI Providers
+- **Sandboxes**: E2B (Primary), Vercel (Alternative)
+- **Web Scraping**: Firecrawl API
+- **Development**: Turbopack, ESLint, PostCSS
+
+## Project Structure
+
+```
+Booster/
+├── app/                 # Next.js App Router pages
+├── components/          # Reusable UI components
+├── lib/                 # Utility functions and configurations
+├── config/              # Application configuration
+├── types/               # TypeScript type definitions
+├── styles/              # CSS and styling files
+├── public/              # Static assets
+└── docs/                # Documentation
+```
+
+## Development
+
+### Available Scripts
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+### Key Features
+- **Hot Module Replacement** - Instant updates during development
+- **TypeScript** - Full type safety and IntelliSense
+- **Responsive Design** - Mobile-first approach
+- **Component Architecture** - Modular, reusable components
+
+## Deployment
+
+Ready for deployment to:
+- **Vercel** (recommended for Next.js)
+- **Netlify**
+- **Railway**
+- **Self-hosted** servers
+
 ## License
 
 MIT
+
+---
+
+**Built with ❤️ using cutting-edge AI and web technologies**
